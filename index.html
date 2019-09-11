@@ -1,0 +1,11 @@
+<body>
+	<div style="background-color: green;width: 100px;height: 100px;position: absolute; top:30%; " id = "block1">
+	</div>
+	<script src = "continuos-promise.js">
+	</script>
+	<script>
+		createContinuousPromise(10, (i) => {
+			document.getElementById('block1').style.left = `${i}px`
+		})
+	</script>
+</body>
